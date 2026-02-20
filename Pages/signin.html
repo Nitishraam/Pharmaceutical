@@ -117,25 +117,66 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // SIGNIN FORM VALIDATION - Password > 6 characters
     signinForm.addEventListener('submit', (e) => {
         e.preventDefault();
+        
+        const email = signinForm.querySelector('input[name="email"]').value.trim();
+        const password = signinForm.querySelector('input[name="password"]').value;
+        
+        if (!email || !password) {
+            alert('Please fill all fields!');
+            return;
+        }
+        
+        if (password.length < 6) {
+            alert('Password must be at least 6 characters long!');
+            signinForm.querySelector('input[name="password"]').focus();
+            return;
+        }
+        
         window.location.href = 'error.html';
     });
 
+    // SIGNUP FORM VALIDATION - Password > 6 characters + Match
     signupForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
+        const name = signupForm.querySelector('input[name="name"]').value.trim();
+        const email = signupForm.querySelector('input[name="email"]').value.trim();
         const password = signupForm.querySelector('input[name="password"]').value;
         const confirmPassword = signupForm.querySelector('input[name="confirm_password"]').value;
         
-        if (password === confirmPassword) {
-            window.location.href = 'error.html';
-        } else {
+        // Check empty fields
+        if (!name || !email || !password || !confirmPassword) {
+            alert('Please fill all fields!');
+            return;
+        }
+        
+        // Check password length
+        if (password.length < 6) {
+            alert('Password must be at least 6 characters long!');
+            signupForm.querySelector('input[name="password"]').focus();
+            return;
+        }
+        
+        // Check confirm password length
+        if (confirmPassword.length < 6) {
+            alert('Confirm password must be at least 6 characters long!');
+            signupForm.querySelector('input[name="confirm_password"]').focus();
+            return;
+        }
+        
+        // Check password match
+        if (password !== confirmPassword) {
             alert('Passwords do not match! Please try again.');
             signupForm.querySelector('input[name="password"]').value = '';
             signupForm.querySelector('input[name="confirm_password"]').value = '';
             signupForm.querySelector('input[name="password"]').focus();
+            return;
         }
+        
+        window.location.href = 'error.html';
     });
 });
 </script>
