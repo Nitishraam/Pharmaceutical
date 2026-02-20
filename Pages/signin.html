@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./signin.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <div class="bg-container">
+    <img src="../Images/sign.webp" alt="Medical Background">
+    <div class="bg-overlay"></div>
+</div>
+
+<div class="container">
+    <div class="form-wrapper">
+        <button class="close-btn" onclick="window.location.href='../index.html'">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="logo">
+            <i class="fas fa-pills"></i>
+            <span>STACKLY</span>
+        </div>
+        
+        <div class="form-toggle">
+            <button class="tab-btn active" data-form="signin">Sign In</button>
+            <button class="tab-btn" data-form="signup">Sign Up</button>
+        </div>
+
+        <form class="auth-form signin-form active" action="error.html">
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Password" required>
+                <span class="toggle-password"><i class="fas fa-eye"></i></span>
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+
+        <form class="auth-form signup-form" action="error.html">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Password" required>
+                <span class="toggle-password"><i class="fas fa-eye"></i></span>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <span class="toggle-password"><i class="fas fa-eye"></i></span>
+            </div>
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const forms = document.querySelectorAll('.auth-form');
+    const togglePasswords = document.querySelectorAll('.toggle-password');
+    const signinForm = document.querySelector('.signin-form');
+    const signupForm = document.querySelector('.signup-form');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetForm = btn.dataset.form;
+            
+            tabBtns.forEach(b => b.classList.remove('active'));
+            forms.forEach(f => f.classList.remove('active'));
+            
+            btn.classList.add('active');
+            document.querySelector(`.${targetForm}-form`).classList.add('active');
+        });
+    });
+
+    togglePasswords.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const input = toggle.closest('.input-group').querySelector('input');
+            const icon = toggle.querySelector('i');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    });
+
+    signinForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        window.location.href = 'error.html';
+    });
+
+    signupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const password = signupForm.querySelector('input[name="password"]').value;
+        const confirmPassword = signupForm.querySelector('input[name="confirm_password"]').value;
+        
+        if (password === confirmPassword) {
+            window.location.href = 'error.html';
+        } else {
+            alert('Passwords do not match! Please try again.');
+            signupForm.querySelector('input[name="password"]').value = '';
+            signupForm.querySelector('input[name="confirm_password"]').value = '';
+            signupForm.querySelector('input[name="password"]').focus();
+        }
+    });
+});
+</script>
+
+    
+</body>
+</html>
