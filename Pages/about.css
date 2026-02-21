@@ -1608,7 +1608,7 @@ body {
 @media (max-width: 480px) {
     .partner-logo {
         flex: 0 0 200px;
-        height: 100px;
+        height: 170px;
     }
     
     .carousel-track {
