@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./blog.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div id="loader">
+<span class="loader">STACKLY</span>
+
+</div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="logo">
+            <img class="logo2" src="../Images/logo.png" alt="RedPeak Logo"/>
+        </a> 
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item dropdown">
+                <a href="../index.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </li>
+            <li  class="nav-item"><a  href="./about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="./service.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a  style="color: #007bff;" href="./blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="./error.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="./error.html" class="nav-link">Dashboard</a></li>
+        </ul>
+        <a href="./signin.html" class="signin-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign In</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<section class="blog-hero-section">
+    <div class="hero-pattern"></div>
+    
+    <nav class="blog-breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html" class="bc-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <i class="fas fa-chevron-right bc-separator"></i>
+            <span class="bc-current">Blog</span>
+        </div>
+    </nav>
+    
+    <div class="hero-main">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="blog-badge">Healthcare Insights</div>
+            <h1>Latest Health Articles & <span>Expert Advice</span></h1>
+            <p>Stay informed with our comprehensive guides, medical research, and wellness tips from certified professionals</p>
+            
+            <div class="blog-stats">
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <span>Articles</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <span>Monthly Readers</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.8⭐</div>
+                    <span>Average Rating</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-visual" data-aos="fade-left">
+            <div class="featured-post">
+                <div class="post-image">
+                    <img src="../Images/b1.webp" alt="Featured Article">
+                    <div class="post-category">Diabetes Care</div>
+                </div>
+                <div class="post-preview">
+                    <h3>10 Essential Tips for Managing Diabetes in 2026</h3>
+                    <div class="post-meta">
+                        <span class="author">Dr. Priya Sharma</span>
+                        <span class="date">Feb 22, 2026</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog-articles-section">
+    <div class="articles-container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Latest Healthcare Articles</h2>
+            <p>Stay updated with the most recent medical insights and wellness tips</p>
+        </div>
+        
+        <div class="articles-grid">
+      
+            
+            <article class="article-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="article-image">
+                    <img src="../Images/b2.webp" alt="Heart Health">
+                    <div class="article-category">Cardiology</div>
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="author">Dr. Rajesh Kumar</span>
+                        <span class="date">Feb 20, 2026</span>
+                        <span class="read-time">6 min</span>
+                    </div>
+                    <h3>Understanding Cholesterol: New Guidelines for Heart Health</h3>
+                    <p>Recent studies show LDL targets below 70mg/dL for high-risk patients. Learn dietary interventions and statin alternatives...</p>
+                    <a href="./error.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+            
+            <article class="article-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="article-image">
+                    <img src="../Images/b3.webp" alt="Mental Health">
+                    <div class="article-category">Mental Health</div>
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="author">Dr. Anita Sen</span>
+                        <span class="date">Feb 19, 2026</span>
+                        <span class="read-time">5 min</span>
+                    </div>
+                    <h3>Sleep Disorders: Symptoms, Causes & Modern Treatments</h3>
+                    <p>Insomnia affects 30% of adults. CBT-I shows 70% improvement rates vs medication. New wearable sleep trackers reviewed...</p>
+                    <a href="./error.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+            
+            <article class="article-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="article-image">
+                    <img src="../Images/b4.webp" alt="Nutrition">
+                    <div class="article-category">Nutrition</div>
+                </div>
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="author">Nutritionist Riya</span>
+                        <span class="date">Feb 18, 2026</span>
+                        <span class="read-time">7 min</span>
+                    </div>
+                    <h3>Intermittent Fasting: Science Behind the 16:8 Method</h3>
+                    <p>Clinical trials confirm 14% weight loss, improved insulin sensitivity. Best foods, timing, and who should avoid...</p>
+                    <a href="./error.html" class="read-more">Read Article →</a>
+                </div>
+            </article>
+        </div>
+        
+        <!-- <div class="articles-pagination">
+            <a href="#" class="page-btn prev">← Newer</a>
+            <span class="page-info">Page 1 of 12</span>
+            <a href="#" class="page-btn next">Older →</a>
+        </div> -->
+    </div>
+</section>
+
+
+<section class="blog-categories-section">
+    <div class="categories-container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Explore by Category</h2>
+            <p>Find articles on your specific health concerns</p>
+        </div>
+        
+        <div class="categories-grid">
+            <div class="category-card diabetes" data-aos="zoom-in" data-aos-delay="100">
+                <div class="category-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Diabetes Care</h3>
+                    <span class="category-count">42 articles</span>
+                    <p>Latest management tips, insulin therapies, CGM reviews</p>
+                </div>
+            </div>
+            
+            <div class="category-card heart" data-aos="zoom-in" data-aos-delay="200">
+                <div class="category-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Heart Health</h3>
+                    <span class="category-count">28 articles</span>
+                    <p>Cholesterol, blood pressure, cardiac wellness</p>
+                </div>
+            </div>
+            
+            <div class="category-card mental" data-aos="zoom-in" data-aos-delay="300">
+                <div class="category-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Mental Health</h3>
+                    <span class="category-count">35 articles</span>
+                    <p>Anxiety, depression, sleep disorders treatment</p>
+                </div>
+            </div>
+            
+            <div class="category-card nutrition" data-aos="zoom-in" data-aos-delay="400">
+                <div class="category-icon">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Nutrition</h3>
+                    <span class="category-count">51 articles</span>
+                    <p>Diet plans, supplements, weight management</p>
+                </div>
+            </div>
+            
+            <div class="category-card women" data-aos="zoom-in" data-aos-delay="500">
+                <div class="category-icon">
+                    <i class="fas fa-female"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Women’s Health</h3>
+                    <span class="category-count">29 articles</span>
+                    <p>Pregnancy, PCOS, menopause care</p>
+                </div>
+            </div>
+            
+            <div class="category-card kids" data-aos="zoom-in" data-aos-delay="600">
+                <div class="category-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Pediatrics</h3>
+                    <span class="category-count">22 articles</span>
+                    <p>Vaccination, growth, childhood illnesses</p>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+</section>
+
+
+<section class="authors-section">
+    <div class="authors-container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Meet Our Medical Experts</h2>
+            <p>Articles written by certified doctors, nutritionists & healthcare professionals</p>
+        </div>
+        
+        <div class="authors-grid">
+            <div class="author-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="author-avatar">
+                    <img src="../Images/a4.webp" alt="Dr. Priya Sharma">
+                    <div class="author-status online"></div>
+                </div>
+                <div class="author-info">
+                    <h3>Dr. Priya Sharma</h3>
+                    <span class="author-specialty">Endocrinologist</span>
+                    <div class="author-stats">
+                        <span>45 Articles</span>
+                        <span>28K Readers</span>
+                        <span>4.9⭐</span>
+                    </div>
+                    <p>MBBS, MD (Endocrinology) with 12+ years experience in diabetes management and metabolic disorders</p>
+                    <a href="./error.html" class="author-link">View All Articles</a>
+                </div>
+            </div>
+            
+            <div class="author-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="author-avatar">
+                    <img src="../Images/a2.webp" alt="Dr. Rajesh Kumar">
+                </div>
+                <div class="author-info">
+                    <h3>Dr. Rajesh Kumar</h3>
+                    <span class="author-specialty">Cardiologist</span>
+                    <div class="author-stats">
+                        <span>32 Articles</span>
+                        <span>19K Readers</span>
+                        <span>4.8⭐</span>
+                    </div>
+                    <p>DM Cardiology, specializes in preventive cardiology and lipid management</p>
+                    <a href="./error.html" class="author-link">View Articles</a>
+                </div>
+            </div>
+            
+            <div class="author-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="author-avatar">
+                    <img src="../Images/a3.webp" alt="Dr. Anita Sen">
+                </div>
+                <div class="author-info">
+                    <h3>Dr. Anita Sen</h3>
+                    <span class="author-specialty">Psychiatrist</span>
+                    <div class="author-stats">
+                        <span>27 Articles</span>
+                        <span>15K Readers</span>
+                        <span>4.9⭐</span>
+                    </div>
+                    <p>MD Psychiatry, expert in anxiety disorders and cognitive behavioral therapy</p>
+                    <a href="./error.html" class="author-link">View Articles</a>
+                </div>
+            </div>
+            
+            <div class="author-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="author-avatar">
+                    <img src="../Images/p3.webp" alt="Riya Patel">
+                </div>
+                <div class="author-info">
+                    <h3>Riya Patel</h3>
+                    <span class="author-specialty">Registered Dietitian</span>
+                    <div class="author-stats">
+                        <span>38 Articles</span>
+                        <span>22K Readers</span>
+                        <span>4.7⭐</span>
+                    </div>
+                    <p>MSc Nutrition, specializes in weight management and therapeutic diets</p>
+                    <a href="./error.html" class="author-link">View Articles</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="authors-cta">
+            <h3>Want to write for us?</h3>
+            <p>Join our panel of 50+ medical experts contributing healthcare content</p>
+            <a href="./error.html" class="cta-button">Become Contributor</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="faq-blog-section">
+    <div class="faq-container">
+        <div class="section-header">
+            <h2>Health Questions Answered</h2>
+            <p>Common questions from our readers - answered by medical experts</p>
+        </div>
+        
+        <div class="faq-grid">
+            <div class="faq-card">
+                <div class="faq-question">
+                    <h3>How can I lower cholesterol without medication?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Focus on soluble fiber (oats, beans), healthy fats (avocados, nuts), and 30 minutes daily exercise. Studies show 10-15% LDL reduction in 3 months.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-question">
+                    <h3>What's causing my constant fatigue?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Most common: thyroid issues (check TSH), vitamin D/B12 deficiency, sleep apnea, or anemia. Get basic bloodwork - 80% of cases diagnosed this way.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-question">
+                    <h3>Is intermittent fasting safe for women?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes for most, but women need shorter windows (12-14 hrs). Avoid extreme fasting near menstrual cycle. Consult doctor if PCOS/thyroid issues present.</p>
+                </div>
+            </div>
+            
+            <div class="faq-card">
+                <div class="faq-question">
+                    <h3>When should I worry about blood pressure?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Above 140/90 consistently = hypertension stage 2. 130-139/80-89 = elevated. Monitor 3x/week, same time daily. Lifestyle changes work for 60% of cases.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="faq-cta">
+            <a href="./error.html" class="cta-button">Ask Your Question →</a>
+        </div>
+    </div>
+</section>
+
+<section class="blog-final-cta">
+    <div class="cta-container">
+        <div class="cta-content">
+            <div class="cta-badge">Don't Miss Out</div>
+            <h2>Ready to Take Control of Your Health?</h2>
+            <p>Join 50K+ readers getting weekly health insights from certified doctors</p>
+            
+            <div class="cta-stats">
+                <div class="stat-circle">
+                    <div class="stat-number">4.9</div>
+                    <span>⭐ Rating</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <span>Readers</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">250+</div>
+                    <span>Articles</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-actions">
+            <form class="primary-action" id="newsletterForm" action="./error.html" method="get">
+                <h4>📧 Get Weekly Digest</h4>
+                <div class="email-form">
+                    <input type="email" 
+                           name="email" 
+                           id="emailField"
+                           placeholder="Enter your email" 
+                           class="email-field"
+                           required>
+                    <button type="submit" class="cta-button primary">Subscribe Free</button>
+                </div>
+            </form>
+            
+            <div class="secondary-actions">
+                <a href="#" class="action-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Health Tips</span>
+                </a>
+                <a href="#" class="action-link">
+                    <i class="fas fa-download"></i>
+                    <span>Download Guides</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-column company-info">
+                <div class="company-logo">
+                    <h3>Stackly</h3>
+                </div>
+                <p class="company-desc">
+                    Premium online pharmacy delivering FDA-approved medications with 
+                    temperature-controlled logistics. Serving 500K+ customers with 99.9% 
+                    authenticity guarantee and 24/7 pharmacist support.
+                </p>
+                <div class="company-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@medicare.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-column quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href=".error.html">About</a></li>
+                    <li><a href="./error.html">Service</a></li>
+                    <li><a href="./error.html">Blog</a></li>
+                    <li><a href="./error.html">contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Address -->
+            <div class="footer-column address-section">
+                <h4>Our Locations</h4>
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Headquarters</h5>
+                        <p>123 Medical Street<br>Healthcare City, Salem - 12345</p>
+                    </div>
+                </div>
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Warehouse</h5>
+                        <p>456 Pharma Park<br>Industrial Zone, Salem 67890</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="footer-column map-preview">
+                <h4>Location Map</h4>
+                <div class="map-container">
+                    <iframe
+                class="map1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+        </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="./error.html" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="./error.html" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                <a href="./error.html" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="./error.html" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="./error.html" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <div class="footer-rights">
+                <p>&copy; 2026 MediCare Pharmacy. All rights reserved. | 
+                   <a href="./error.html">Privacy Policy</a> | 
+                   <a href="./error.html">Terms of Service</a> 
+                
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const faqCards = document.querySelectorAll('.faq-card');
+    
+    faqCards.forEach(card => {
+        const question = card.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            const isActive = card.classList.contains('active');
+            
+            // Close all cards
+            faqCards.forEach(c => c.classList.remove('active'));
+            
+            // Open clicked card if not already active
+            if (!isActive) {
+                card.classList.add('active');
+            }
+        });
+    });
+});
+
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+        hamburger.classList.toggle('active');
+    });
+
+    dropdowns.forEach(dropdown => {
+        const dropdownLink = dropdown.querySelector('.nav-link');
+        dropdownLink.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('active')) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-menu') && !e.target.closest('.hamburger')) {
+            navMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            hamburger.classList.remove('active');
+            dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+        }
+    });
+
+    document.querySelectorAll('.dropdown-content a, .nav-link:not(.dropdown .nav-link), .signin-btn').forEach(link => {
+        link.addEventListener('click', () => {
+            setTimeout(() => {
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                hamburger.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            }, 150);
+        });
+    });
+});
+</script>
+
+
+ <script>
+      AOS.init({
+        duration: 800,
+        once: false,
+        mirror: true,
+        offset: 100,
+      });
+    </script>
+    <script>
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+
+  }, 1000);
+});
+</script>
+    
+</body>
+</html>
