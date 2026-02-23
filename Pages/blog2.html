@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./blog2.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div id="loader">
+<span class="loader">STACKLY</span>
+
+</div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="./home2.html" class="logo">
+            <img class="logo2" src="../Images/logo.png" alt="RedPeak Logo"/>
+        </a> 
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item dropdown">
+                <a  href="./home2.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="../index.html">Home 1</a></li>
+                </ul>
+            </li>
+            <li  class="nav-item"><a href="./about2.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a  href="./service2.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a style="color: #8000ff;"  href="./blog2.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a  href="./contact2.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="./signin.html" class="signin-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign In</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<section class="blog-entry-header" id="blog-entry">
+    <div class="entry-top-bar">
+         <div class="about-breadcrumb">
+            <a href="./home2.html">  <i class="fas fa-home"></i> Home</a>
+            <span>/</span>
+            <span>Blog</span>
+        </div>
+    </div>
+    
+    <div class="entry-main">
+        <div class="entry-left">
+            <div class="entry-badge">AI PHARMA INSIGHTS</div>
+            <h1>Revolutionizing Drug Discovery<br>with Next-Gen AI Platforms</h1>
+            <div class="entry-meta">
+                <div class="meta-author">
+                    <div class="author-avatar"></div>
+                    <span>Dr. Aarav Sharma</span>
+                </div>
+                <div class="meta-details">
+                    <span class="meta-date">February 23, 2026</span>
+                    <span class="meta-read">12 min read</span>
+                    <span class="meta-views">1.8K views</span>
+                </div>
+            </div>
+            <div class="entry-preview">
+                Cutting-edge AI screening 50M+ compounds with 98% accuracy. Phase II success rates increased by 40%...
+            </div>
+        </div>
+        
+        <div class="entry-right">
+            <div class="topic-tags">
+                <span class="tag">AI Discovery</span>
+                <span class="tag">Clinical Trials</span>
+                <span class="tag">Pharma Tech</span>
+            </div>
+            <div class="quick-stats">
+                <div class="stat-box">
+                    <div class="stat-icon">📊</div>
+                    <span>98% Success</span>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">⚡</div>
+                    <span>40% Faster</span>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon">🔬</div>
+                    <span>50M+ Screened</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-articles-img" id="featured-blogs">
+    <div class="featured-img-wrapper">
+        <div class="section-title">
+            <h2>Featured Articles</h2>
+            <p>Most popular pharma insights this week</p>
+        </div>
+        
+        <div class="featured-img-grid">
+            <!-- Featured Article 1 -->
+            <article class="featured-img-card large-card">
+                <div class="img-container">
+                    <img src="../Images/b22.webp" 
+                         alt="AI Drug Discovery Platform" 
+                         class="article-img"
+                         loading="lazy">
+                    <span class="img-category">AI Discovery</span>
+                </div>
+                <div class="card-text">
+                    <h3>AI Screens 50M Compounds in 72 Hours</h3>
+                    <p>Deep learning achieves 98% accuracy identifying Phase II-ready candidates across 12 therapeutic areas.</p>
+                    <div class="article-meta">
+                        <img src="../Images/p4.webp" 
+                             alt="Dr. Aarav Sharma" 
+                             class="author-img">
+                        <div class="meta-text">
+                            <span class="author-name">Dr. Aarav Sharma</span>
+                            <span class="meta-details">12 min • Feb 23 • 2.1K views</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Featured Article 2 -->
+            <article class="featured-img-card">
+                <div class="img-container">
+                    <img src="../Images/b23.webp" 
+                         alt="Clinical Trial Analytics" 
+                         class="article-img"
+                         loading="lazy">
+                    <span class="img-category">Clinical Trials</span>
+                </div>
+                <div class="card-text">
+                    <h3>40% Phase III Success with Predictive Analytics</h3>
+                    <p>Machine learning predicts patient dropout reducing trial failures by 35% in real-time.</p>
+                    <div class="article-meta">
+                        <img src="../Images/a25.webp" 
+                             alt="Dr. Priya Patel" 
+                             class="author-img">
+                        <div class="meta-text">
+                            <span class="author-name">Dr. Priya Patel</span>
+                            <span class="meta-details">15 min • Feb 20 • 1.8K views</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Featured Article 3 -->
+            <article class="featured-img-card">
+                <div class="img-container">
+                    <img src="../Images/b24.webp" 
+                         alt="Quantum Computing Drug Design" 
+                         class="article-img"
+                         loading="lazy">
+                    <span class="img-category">Pharma Tech</span>
+                </div>
+                <div class="card-text">
+                    <h3>Quantum Computing Speeds Protein Folding 1000x</h3>
+                    <p>Quantum algorithms model complex molecular interactions instantly revolutionizing drug design.</p>
+                    <div class="article-meta">
+                        <img src="../Images/a2.webp" 
+                             alt="Dr. Michael Rodriguez" 
+                             class="author-img">
+                        <div class="meta-text">
+                            <span class="author-name">Dr. Michael Rodriguez</span>
+                            <span class="meta-details">18 min • Feb 18 • 1.4K views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-action">
+            <a href="./error.html" class="view-all-btn">View All 48 Articles</a>
+        </div>
+    </div>
+</section>
+
+<section class="category-blogs-section" id="category-blogs">
+    <div class="category-wrapper">
+        <div class="categories-header">
+            <h2>Browse by Category</h2>
+            <p>Explore specialized pharma research topics</p>
+        </div>
+        
+        <div class="category-tabs">
+            <button class="cat-tab active" data-category="ai">
+                <div class="cat-icon">🤖</div>
+                <span>AI Discovery</span>
+                <span class="cat-count">18</span>
+            </button>
+            <button class="cat-tab" data-category="trials">
+                <div class="cat-icon">🧪</div>
+                <span>Clinical Trials</span>
+                <span class="cat-count">15</span>
+            </button>
+            <button class="cat-tab" data-category="biotech">
+                <div class="cat-icon">🧬</div>
+                <span>Biotech</span>
+                <span class="cat-count">12</span>
+            </button>
+            <button class="cat-tab" data-category="tech">
+                <div class="cat-icon">⚛️</div>
+                <span>Pharma Tech</span>
+                <span class="cat-count">10</span>
+            </button>
+        </div>
+        
+        <div class="category-preview">
+           
+            <div class="preview-content active" data-category="ai">
+                <div class="preview-grid">
+                    <article class="preview-card">
+                        <img src="../Images/a26.webp" 
+                             alt="AI Drug Screening" class="preview-img">
+                        <div class="preview-text">
+                            <h4>Generative AI Designs Novel Antibiotics</h4>
+                            <p>Reinforcement learning creates 5 new antibiotic classes resistant to all known bacterial mutations.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="preview-card">
+                        <img src="../Images/a27.webp" 
+                             alt="Molecular Modeling" class="preview-img">
+                        <div class="preview-text">
+                            <h4>AlphaFold Predicts 200+ Drug Targets</h4>
+                            <p>Protein structure predictions accelerate rare disease therapy development by 3 years.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+     
+            <div class="preview-content" data-category="trials">
+                <div class="preview-grid">
+                    <article class="preview-card">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Trial Analytics" class="preview-img">
+                        <div class="preview-text">
+                            <h4>Digital Twins Reduce Trial Failures 45%</h4>
+                            <p>Patient-specific models predict outcomes before enrollment saving $200M per study.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="preview-card">
+                        <img src="https://images.unsplash.com/photo-1582213782174-e45ecd658f78?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Patient Recruitment" class="preview-img">
+                        <div class="preview-text">
+                            <h4>AI Finds Trial Patients 6x Faster</h4>
+                            <p>NLP screening EHRs identifies 92% of eligible patients missed by traditional methods.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category-cta">
+            <a href="#explore-categories" class="explore-btn">Explore All Categories</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="authors-section" id="expert-authors">
+    <div class="authors-wrapper">
+        <div class="authors-header">
+            <h2>Expert Authors</h2>
+            <p>Pharma industry leaders sharing cutting-edge research</p>
+        </div>
+        
+        <div class="authors-grid">
+            <!-- Author 1 -->
+            <div class="author-card">
+                <div class="author-profile">
+                    <img src="../Images/a24.webp" 
+                         alt="Dr. Aarav Sharma" class="author-photo">
+                    <div class="author-status online"></div>
+                </div>
+                <div class="author-details">
+                    <h4>Dr. Aarav Sharma</h4>
+                    <span class="author-title">Chief AI Scientist</span>
+                    <div class="author-stats">
+                        <span class="stat">18 articles</span>
+                        <span class="stat">4.2K reads</span>
+                    </div>
+                    <p class="author-bio">Pioneering AI drug discovery with 50M+ compound screening expertise.</p>
+                    <a href="./error.html" class="view-articles">View Articles</a>
+                </div>
+            </div>
+            
+            <!-- Author 2 -->
+            <div class="author-card">
+                <div class="author-profile">
+                    <img src="../Images/a4.webp" 
+                         alt="Dr. Priya Patel" class="author-photo">
+                    <div class="author-status"></div>
+                </div>
+                <div class="author-details">
+                    <h4>Dr. Priya Patel</h4>
+                    <span class="author-title">Clinical Trials Director</span>
+                    <div class="author-stats">
+                        <span class="stat">15 articles</span>
+                        <span class="stat">3.8K reads</span>
+                    </div>
+                    <p class="author-bio">Optimizing Phase I-IV trials with predictive analytics expertise.</p>
+                    <a href="./error.html" class="view-articles">View Articles</a>
+                </div>
+            </div>
+            
+            <!-- Author 3 -->
+            <div class="author-card">
+                <div class="author-profile">
+                    <img src="../Images/a25.webp" 
+                         alt="Dr. Michael Rodriguez" class="author-photo">
+                    <div class="author-status away"></div>
+                </div>
+                <div class="author-details">
+                    <h4>Dr. Michael Rodriguez</h4>
+                    <span class="author-title">Quantum Pharma Lead</span>
+                    <div class="author-stats">
+                        <span class="stat">12 articles</span>
+                        <span class="stat">2.9K reads</span>
+                    </div>
+                    <p class="author-bio">Quantum computing applications in molecular modeling and drug design.</p>
+                    <a href="./error.html" class="view-articles">View Articles</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="authors-cta">
+            <a href="./error.html" class="meet-experts-btn">Meet All 24 Experts</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="pharma-contact-section" id="contact-form">
+    <div class="contact-container">
+        <div class="contact-left">
+            <div class="contact-header">
+                <h2>Get Your Custom Quote</h2>
+                <p>AI Drug Discovery Platform - Deployed in 48 Hours</p>
+            </div>
+            
+            <form class="pharma-form" action="./error.html" method="get">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" placeholder="Dr. John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Company</label>
+                        <input type="text" name="company" placeholder="PharmaCorp Inc." required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Work Email</label>
+                        <input type="email" name="email" placeholder="john@pharmcorp.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" name="phone" placeholder="+1 (555) 123-4567">
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label>Therapeutic Areas (select all that apply)</label>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="oncology" value="Oncology">
+                            <span class="check-box">✓</span>
+                            Oncology
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="neuro" value="Neurology">
+                            <span class="check-box">✓</span>
+                            Neurology
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="cardio" value="Cardiology">
+                            <span class="check-box">✓</span>
+                            Cardiology
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="immuno" value="Immunology">
+                            <span class="check-box">✓</span>
+                            Immunology
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group textarea-group">
+                    <label>Project Details</label>
+                    <textarea name="message" rows="4" placeholder="Tell us about your drug discovery needs..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>Get My Quote</span>
+                    <div class="btn-wave"></div>
+                </button>
+            </form>
+        </div>
+        
+        <div class="contact-right">
+            <div class="success-stats">
+                <div class="stat-item">
+                    <div class="stat-number">24h</div>
+                    <span>Response Time</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <span>Client Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <span>Pharma Clients</span>
+                </div>
+            </div>
+            
+            <div class="contact-methods">
+                <div class="method-item">
+                    <div class="method-icon">📧</div>
+                    <span>hello@pharmaai.com</span>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon">📞</div>
+                    <span>+1 (800) 555-0123</span>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon">🌐</div>
+                    <span>Live Chat (9AM-6PM EST)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-column company-info">
+                <div class="company-logo">
+                    <h3>Stackly</h3>
+                </div>
+                <p class="company-desc">
+                    Premium online pharmacy delivering FDA-approved medications with 
+                    temperature-controlled logistics. Serving 500K+ customers with 99.9% 
+                    authenticity guarantee and 24/7 pharmacist support.
+                </p>
+                <div class="company-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@medicare.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-column quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./home2.html">Home</a></li>
+                    <li><a href=".error.html">About</a></li>
+                    <li><a href="./error.html">Service</a></li>
+                    <li><a href="./error.html">Blog</a></li>
+                    <li><a href="./error.html">contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Address -->
+            <div class="footer-column address-section">
+                <h4>Our Locations</h4>
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Headquarters</h5>
+                        <p>123 Medical Street<br>Healthcare City, Salem - 12345</p>
+                    </div>
+                </div>
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Warehouse</h5>
+                        <p>456 Pharma Park<br>Industrial Zone, Salem 67890</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="footer-column map-preview">
+                <h4>Location Map</h4>
+                <div class="map-container">
+                    <iframe
+                class="map1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+        </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="./error.html" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="./error.html" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                <a href="./error.html" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="./error.html" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="./error.html" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <div class="footer-rights">
+                <p>&copy; 2026 MediCare Pharmacy. All rights reserved. | 
+                   <a href="./error.html">Privacy Policy</a> | 
+                   <a href="./error.html">Terms of Service</a> 
+                
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+        hamburger.classList.toggle('active');
+    });
+
+    dropdowns.forEach(dropdown => {
+        const dropdownLink = dropdown.querySelector('.nav-link');
+        dropdownLink.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('active')) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-menu') && !e.target.closest('.hamburger')) {
+            navMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            hamburger.classList.remove('active');
+            dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+        }
+    });
+
+    document.querySelectorAll('.dropdown-content a, .nav-link:not(.dropdown .nav-link), .signin-btn').forEach(link => {
+        link.addEventListener('click', () => {
+            setTimeout(() => {
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                hamburger.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            }, 150);
+        });
+    });
+});
+</script>
+
+
+ <script>
+      AOS.init({
+        duration: 800,
+        once: false,
+        mirror: true,
+        offset: 100,
+      });
+    </script>
+    <script>
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+
+  }, 1000);
+});
+</script>
+
+
+</body>
+</html>

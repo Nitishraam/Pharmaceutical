@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./service2.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div id="loader">
+<span class="loader">STACKLY</span>
+
+</div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="./home2.html" class="logo">
+            <img class="logo2" src="../Images/logo.png" alt="RedPeak Logo"/>
+        </a> 
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item dropdown">
+                <a  href="./home2.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="../index.html">Home 1</a></li>
+                </ul>
+            </li>
+            <li  class="nav-item"><a href="./about2.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a style="color: #8000ff;"  href="./service2.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="./blog2.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a  href="./contact2.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="./signin.html" class="signin-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign In</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<section class="services-hero-v3" id="services-hero" data-aos="fade-up">
+    <div class="services-container">
+        <!-- Breadcrumb -->
+        <div class="about-breadcrumb">
+            <a href="./home2.html">  <i class="fas fa-home"></i> Home</a>
+            <span>/</span>
+            <span>Service</span>
+        </div>
+        
+        <div class="services-grid">
+           
+            <div class="services-content">
+                <div class="service-badge">Trusted by 25K+ Hospitals</div>
+                <h1>End-to-End Pharmaceutical Services</h1>
+                <p>Complete healthcare solutions from drug discovery to global patient delivery with 99.2% reliability.</p>
+                
+                <div class="services-preview">
+                    <div class="preview-item">
+                        <div class="preview-icon">🔬</div>
+                        <h4>Drug Discovery</h4>
+                    </div>
+                    <div class="preview-item">
+                        <div class="preview-icon">🏭</div>
+                        <h4>Manufacturing</h4>
+                    </div>
+                    <div class="preview-item">
+                        <div class="preview-icon">📦</div>
+                        <h4>Distribution</h4>
+                    </div>
+                </div>
+                
+                <div class="services-cta">
+                    <a href="./error.html" class="btn-primary">Explore Services</a>
+                    <a href="./error.html" class="btn-secondary">Case Studies</a>
+                </div>
+            </div>
+            
+           
+            <div class="services-stats">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <span>Active Projects</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25K+</div>
+                    <span>Hospitals</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <span>Countries</span>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">99.2%</div>
+                    <span>Success Rate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-grid-section" id="our-services">
+    <div class="services-container">
+        <div class="section-header">
+            <h2>Our Core Services</h2>
+            <p>Comprehensive pharmaceutical solutions across the entire healthcare value chain</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">🔬</div>
+                <div class="service-content">
+                    <h3>Drug Discovery</h3>
+                    <p>AI-powered molecular design and target identification with 300% faster discovery cycles</p>
+                    <div class="service-stats">
+                        <span>200+</span>
+                        <span>Compounds Daily</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">🏭</div>
+                <div class="service-content">
+                    <h3>Advanced Manufacturing</h3>
+                    <p>12 GMP-certified facilities with 99.9% uptime and zero-waste production</p>
+                    <div class="service-stats">
+                        <span>50M+</span>
+                        <span>Doses/Year</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">📦</div>
+                <div class="service-content">
+                    <h3>Global Distribution</h3>
+                    <p>Cold-chain logistics serving 150+ countries with 24-hour delivery guarantee</p>
+                    <div class="service-stats">
+                        <span>150+</span>
+                        <span>Countries</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">🧪</div>
+                <div class="service-content">
+                    <h3>Clinical Trials</h3>
+                    <p>Phase I-IV trials across 5,000+ sites with real-time data analytics platform</p>
+                    <div class="service-stats">
+                        <span>200+</span>
+                        <span>Active Trials</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="process-section" id="our-process">
+    <div class="process-container">
+        <div class="section-header">
+            <h2>Our Proven Process</h2>
+            <p>Streamlined 5-stage pipeline from concept to patient delivery</p>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="process-step active">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Discovery</h3>
+                    <p>AI screening of 1M+ compounds daily</p>
+                </div>
+                <div class="step-line"></div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Pre-Clinical</h3>
+                    <p>Advanced lab validation & animal studies</p>
+                </div>
+                <div class="step-line"></div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Clinical Trials</h3>
+                    <p>Phase I-IV across 5K+ global sites</p>
+                </div>
+                <div class="step-line"></div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Manufacturing</h3>
+                    <p>GMP scale-up production</p>
+                </div>
+                <div class="step-line"></div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">05</div>
+                <div class="step-content">
+                    <h3>Distribution</h3>
+                    <p>Global cold-chain delivery</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="process-stats">
+            <div class="stat-item">
+                <span class="stat-value">18</span>
+                <span>Months Average</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">92%</span>
+                <span>Success Rate</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="case-study-section" id="case-studies">
+    <div class="case-container">
+        <div class="section-header">
+            <h2>Success Stories</h2>
+            <p>Real results from our pharmaceutical services</p>
+        </div>
+        
+        <div class="case-main">
+            <!-- Image Side -->
+            <div class="case-image">
+                <img src="../Images/s22.webp" alt="Case Study Success" loading="lazy">
+                <div class="image-overlay">
+                    <span>98.7% Success Rate</span>
+                </div>
+            </div>
+            
+            <!-- Content Side -->
+            <div class="case-content">
+                <div class="case-badge">Oncology Breakthrough</div>
+                <h3>OncoTarget™ Therapy</h3>
+                <p>Developed targeted cancer therapy reducing treatment time from 24 months to 12 months with 87% remission rate across 50K patients.</p>
+                
+                <div class="case-results">
+                    <div class="result-item">
+                        <span class="result-number">87%</span>
+                        <span>Remission Rate</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-number">50K</span>
+                        <span>Patients Treated</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-number">12</span>
+                        <span>Months Treatment</span>
+                    </div>
+                </div>
+                
+                <div class="case-actions">
+                    <a href="./error.html" class="btn-primary">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tech-stack-section" id="tech-stack">
+    <div class="tech-wrapper">
+        <div class="tech-title">
+            <h2>Technology Leadership</h2>
+            <p>Enterprise-grade platforms driving pharmaceutical excellence</p>
+        </div>
+        
+        <div class="tech-features">
+            <div class="feature-block">
+                <div class="feature-icon">🧬</div>
+                <h3>GenAI Platform</h3>
+                <p>Molecular prediction engine with 98% accuracy</p>
+                <span class="feature-stat">10M+ Screens/Day</span>
+            </div>
+            
+            <div class="feature-block">
+                <div class="feature-icon">🔬</div>
+                <h3>Bioinformatics</h3>
+                <p>Next-gen sequencing & genomic analysis</p>
+                <span class="feature-stat">500K+ Genomes</span>
+            </div>
+            
+            <div class="feature-block">
+                <div class="feature-icon">⚙️</div>
+                <h3>Automation Suite</h3>
+                <p>Robotic process automation for manufacturing</p>
+                <span class="feature-stat">99.9% Yield</span>
+            </div>
+        </div>
+        
+        <div class="tech-cta">
+            <a href="./error.html" class="tech-btn">Schedule Demo</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="pricing-modern" id="pricing-plans">
+    <div class="pricing-modern-wrapper">
+        <div class="pricing-modern-title">
+            <h2>Investment Packages</h2>
+            <p>Scalable solutions for pharmaceutical development</p>
+        </div>
+        
+        <div class="pricing-tabs">
+            <button class="tab-btn active" data-plan="basic">Basic</button>
+            <button class="tab-btn" data-plan="advanced">Advanced</button>
+            <button class="tab-btn" data-plan="premium">Premium</button>
+        </div>
+        
+        <div class="pricing-content">
+            <div class="plan-details active" data-plan="basic">
+                <div class="plan-price-tag">$99K</div>
+                <div class="plan-features-list">
+                    <div class="feature-row">
+                        <span>Phase I-II Trials</span>
+                        <span>6 months</span>
+                    </div>
+                    <div class="feature-row">
+                        <span>5M Compound Screen</span>
+                        <span>Included</span>
+                    </div>
+                    <div class="feature-row">
+                        <span>Analytics Dashboard</span>
+                        <span>Basic</span>
+                    </div>
+                    <div class="feature-row">
+                        <span>Priority Support</span>
+                        <span>Email</span>
+                    </div>
+                </div>
+                <a href="./error.html" class="plan-action">Choose Basic</a>
+            </div>
+            
+            <div class="plan-details" data-plan="advanced">
+                <div class="plan-price-tag">$299K</div>
+                <div class="plan-features-list">
+                    <div class="feature-row highlight">
+                        <span>Full Clinical Pipeline</span>
+                        <span>12 months</span>
+                    </div>
+                    <div class="feature-row highlight">
+                        <span>AI Drug Discovery</span>
+                        <span>15M Screen</span>
+                    </div>
+                    <div class="feature-row highlight">
+                        <span>Real-time Analytics</span>
+                        <span>Advanced</span>
+                    </div>
+                    <div class="feature-row">
+                        <span>24/7 Support</span>
+                        <span>Phone + Chat</span>
+                    </div>
+                </div>
+                <a href="./error.html" class="plan-action popular">Choose Advanced</a>
+            </div>
+            
+            <div class="plan-details" data-plan="premium">
+                <div class="plan-price-tag">$999K+</div>
+                <div class="plan-features-list">
+                    <div class="feature-row highlight">
+                        <span>End-to-End Pipeline</span>
+                        <span>Custom</span>
+                    </div>
+                    <div class="feature-row highlight">
+                        <span>Custom AI Platform</span>
+                        <span>Unlimited</span>
+                    </div>
+                    <div class="feature-row highlight">
+                        <span>Global Manufacturing</span>
+                        <span>Included</span>
+                    </div>
+                    <div class="feature-row highlight">
+                        <span>Dedicated Team</span>
+                        <span>Full-time</span>
+                    </div>
+                </div>
+                <a href="./error.html" class="plan-action">Choose Premium</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="client-stories-section" id="client-stories">
+    <div class="client-stories-wrapper">
+        <div class="client-stories-title">
+            <h2>Trusted by Pharma Leaders</h2>
+            <p>Leading pharmaceutical companies trust our AI-driven solutions</p>
+        </div>
+        
+        <div class="stories-slider">
+            <div class="story-card active">
+                <div class="story-content">
+                    <div class="quote-mark">"</div>
+                    <p>Transformed our drug discovery pipeline with 40% faster screening. Their AI platform identified 3 novel compounds in Phase II trials.</p>
+                </div>
+                <div class="story-author">
+                    <div class="author-image">
+                        <svg viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="32" fill="#8b5cf6"/>
+                            <circle cx="32" cy="32" r="24" fill="#f8fafc" stroke="white" stroke-width="4"/>
+                            <path d="M21 28C8 28.5 8 32 8 36H16" fill="#8b5cf6"/>
+                            <circle cx="27" cy="21" r="2" fill="#99aabb"/>
+                            <circle cx="35" cy="21" r="2" fill="#99aabb"/>
+                            <path d="M22 41V39H26V41H44V43H22V41Z" fill="#99aabb"/>
+                        </svg>
+                    </div>
+                    <div class="author-details">
+                        <h4>Dr. Sarah Chen</h4>
+                        <span>Chief Scientific Officer, BioPharm Innovate</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <div class="story-content">
+                    <div class="quote-mark">"</div>
+                    <p>Their platform reduced our clinical trial costs by 35%. We've successfully advanced 2 candidates to Phase III with their analytics.</p>
+                </div>
+                <div class="story-author">
+                    <div class="author-image">
+                        <svg viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="32" fill="#10b981"/>
+                            <circle cx="32" cy="32" r="24" fill="#f0f9fc" stroke="white" stroke-width="4"/>
+                            <path d="M21 28C8 28.5 8 32 8 36H16" fill="#10b981"/>
+                            <circle cx="27" cy="21" r="2" fill="#99aabb"/>
+                            <circle cx="35" cy="21" r="2" fill="#99aabb"/>
+                            <path d="M22 41V39H26V41H44V43H22V41Z" fill="#99aabb"/>
+                        </svg>
+                    </div>
+                    <div class="author-details">
+                        <h4>Dr. Michael Rodriguez</h4>
+                        <span>VP R&D, Global Therapeutics</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-card">
+                <div class="story-content">
+                    <div class="quote-mark">"</div>
+                    <p>Exceptional AI screening capabilities. Identified our lead compound from 50M candidates in just 3 weeks.</p>
+                </div>
+                <div class="story-author">
+                    <div class="author-image">
+                        <svg viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="32" fill="#f59e0b"/>
+                            <circle cx="32" cy="32" r="24" fill="#f8f6ac" stroke="white" stroke-width="4"/>
+                            <path d="M21 28C8 28.5 8 32 8 36H16" fill="#f59e0b"/>
+                            <circle cx="27" cy="21" r="2" fill="#99aabb"/>
+                            <circle cx="35" cy="21" r="2" fill="#99aabb"/>
+                            <path d="M22 41V39H26V41H44V43H22V41Z" fill="#99aabb"/>
+                        </svg>
+                    </div>
+                    <div class="author-details">
+                        <h4>Dr. Priya Patel</h4>
+                        <span>Head of Innovation, PharmaNext</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-controls">
+            <button class="control-btn prev" aria-label="Previous">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"/>
+                </svg>
+            </button>
+            <button class="control-btn next" aria-label="Next">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="stories-stats">
+            <div class="stat-box">
+                <span class="stat-value">150+</span>
+                <span class="stat-text">Projects Delivered</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value">98%</span>
+                <span class="stat-text">Success Rate</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value">50M+</span>
+                <span class="stat-text">Compounds Screened</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="launch-cta-section" id="launch-now">
+    <div class="launch-container">
+        <div class="cta-mockup">
+            <div class="mockup-screen">
+                <div class="screen-header">
+                    <div class="status-bar"></div>
+                    <div class="app-title">AI Drug Discovery</div>
+                </div>
+                <div class="screen-content">
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <span class="stat-label">Compounds Screened</span>
+                            <div class="stat-display">50M+</div>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Success Rate</span>
+                            <div class="stat-display">98%</div>
+                        </div>
+                    </div>
+                   
+                    <div ><a href="./error.html" class="cta-inside" style="text-decoration: none;">Get Started →</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-promo">
+            <div class="promo-badge">🚀 Launch in 48 Hours</div>
+            <h2>Start Your AI Drug Discovery<br>Platform Today</h2>
+            <p>Proven platform used by 150+ pharma companies. Reduce discovery time from years to months.</p>
+            
+            <div class="trust-markers">
+                <div class="trust-item">
+                    <span class="checkmark">✓</span>
+                    <span>Phase I-IV Ready</span>
+                </div>
+                <div class="trust-item">
+                    <span class="checkmark">✓</span>
+                    <span>50M+ Database</span>
+                </div>
+                <div class="trust-item">
+                    <span class="checkmark">✓</span>
+                    <span>24/7 Support</span>
+                </div>
+            </div>
+            
+            <div class="promo-buttons">
+                <a href="./error.html" class="launch-btn">Launch My Platform</a>
+                <a href="./error.html" class="demo-btn">Watch Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-column company-info">
+                <div class="company-logo">
+                    <h3>Stackly</h3>
+                </div>
+                <p class="company-desc">
+                    Premium online pharmacy delivering FDA-approved medications with 
+                    temperature-controlled logistics. Serving 500K+ customers with 99.9% 
+                    authenticity guarantee and 24/7 pharmacist support.
+                </p>
+                <div class="company-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@medicare.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-column quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./home2.html">Home</a></li>
+                    <li><a href=".error.html">About</a></li>
+                    <li><a href="./error.html">Service</a></li>
+                    <li><a href="./error.html">Blog</a></li>
+                    <li><a href="./error.html">contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Address -->
+            <div class="footer-column address-section">
+                <h4>Our Locations</h4>
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Headquarters</h5>
+                        <p>123 Medical Street<br>Healthcare City, Salem - 12345</p>
+                    </div>
+                </div>
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Warehouse</h5>
+                        <p>456 Pharma Park<br>Industrial Zone, Salem 67890</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="footer-column map-preview">
+                <h4>Location Map</h4>
+                <div class="map-container">
+                    <iframe
+                class="map1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+        </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="./error.html" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="./error.html" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                <a href="./error.html" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="./error.html" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="./error.html" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <div class="footer-rights">
+                <p>&copy; 2026 MediCare Pharmacy. All rights reserved. | 
+                   <a href="./error.html">Privacy Policy</a> | 
+                   <a href="./error.html">Terms of Service</a> 
+                
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const storyCards = document.querySelectorAll('.story-card');
+    const prevBtn = document.querySelector('.control-btn.prev');
+    const nextBtn = document.querySelector('.control-btn.next');
+    
+    let currentIndex = 0;
+    
+    function showStory(index) {
+        storyCards.forEach((card, i) => {
+            card.classList.remove('active');
+            if (i === index) {
+                card.classList.add('active');
+            }
+        });
+    }
+    
+    function nextStory() {
+        currentIndex = (currentIndex + 1) % storyCards.length;
+        showStory(currentIndex);
+    }
+    
+    function prevStory() {
+        currentIndex = (currentIndex - 1 + storyCards.length) % storyCards.length;
+        showStory(currentIndex);
+    }
+    
+    nextBtn.addEventListener('click', nextStory);
+    prevBtn.addEventListener('click', prevStory);
+    
+    setInterval(nextStory, 5000);
+});
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const planDetails = document.querySelectorAll('.plan-details');
+    
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const targetPlan = this.getAttribute('data-plan');
+            
+            // Remove active classes
+            tabBtns.forEach(b => b.classList.remove('active'));
+            planDetails.forEach(p => p.classList.remove('active'));
+            
+            // Add active to clicked tab and matching plan
+            this.classList.add('active');
+            document.querySelector(`.plan-details[data-plan="${targetPlan}"]`).classList.add('active');
+        });
+    });
+});
+
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+        hamburger.classList.toggle('active');
+    });
+
+    dropdowns.forEach(dropdown => {
+        const dropdownLink = dropdown.querySelector('.nav-link');
+        dropdownLink.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('active')) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-menu') && !e.target.closest('.hamburger')) {
+            navMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            hamburger.classList.remove('active');
+            dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+        }
+    });
+
+    document.querySelectorAll('.dropdown-content a, .nav-link:not(.dropdown .nav-link), .signin-btn').forEach(link => {
+        link.addEventListener('click', () => {
+            setTimeout(() => {
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                hamburger.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            }, 150);
+        });
+    });
+});
+</script>
+
+
+ <script>
+      AOS.init({
+        duration: 800,
+        once: false,
+        mirror: true,
+        offset: 100,
+      });
+    </script>
+    <script>
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+
+  }, 1000);
+});
+</script>
+
+
+</body>
+</html>
