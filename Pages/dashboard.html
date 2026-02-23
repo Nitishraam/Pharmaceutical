@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./dashboard.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div id="loader">
+<span class="loader">STACKLY</span>
+
+</div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="logo">
+            <img class="logo2" src="../Images/logo.png" alt="RedPeak Logo"/>
+        </a> 
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item dropdown">
+                <a href="../index.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="./error.html">Home 2</a></li>
+                </ul>
+            </li>
+            <li  class="nav-item"><a  href="./about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a  href="./service.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a  style="color: #007bff;" href="./dashboard.html" class="nav-link">Dashboard</a></li>
+        </ul>
+        <a href="./signin.html" class="signin-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Sign In</a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo2">
+                <i class="fas fa-pills"></i>
+                <span>Stackly</span>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="./dashboard.html" class="nav-item1 active">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="./error.html" class="nav-item1">
+                <i class="fas fa-box"></i>
+                <span>Products</span>
+            </a>
+            <a href="./error.html" class="nav-item1">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Orders</span>
+            </a>
+            <a href="./error.html" class="nav-item1">
+                <i class="fas fa-users"></i>
+                <span>Customers</span>
+            </a>
+            <a href="error.html" class="nav-item1">
+                <i class="fas fa-credit-card"></i>
+                <span>Payments</span>
+            </a>
+            <a href="./error.html" class="nav-item1">
+                <i class="fas fa-file-alt"></i>
+                <span>Reports</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <header class="main-header">
+            <div class="header-left">
+                <h1>Dashboard</h1>
+                <p>Welcome back👋</p>
+            </div>
+           
+        </header>
+
+        <div class="dashboard-grid">
+           
+            <div class="sales-cards">
+                <div class="sales-card total-sales">
+                    <div class="card-header">
+                        <h3>Total Sales</h3>
+                        <span class="trend up"><i class="fas fa-arrow-up"></i> 14.5%</span>
+                    </div>
+                    <div class="card-value">$29,500</div>
+                    <div class="card-change">+₹2,450 from last month</div>
+                </div>
+                <div class="sales-card orders">
+                    <div class="card-header">
+                        <h3>Orders</h3>
+                        <span class="trend down"><i class="fas fa-arrow-down"></i> 2.3%</span>
+                    </div>
+                    <div class="card-value">1,457</div>
+                    <div class="card-change">-23 from last month</div>
+                </div>
+                <div class="sales-card revenue">
+                    <div class="card-header">
+                        <h3>Revenue</h3>
+                        <span class="trend up"><i class="fas fa-arrow-up"></i> 8.7%</span>
+                    </div>
+                    <div class="card-value">$0.00</div>
+                    <div class="card-change">Waiting for payments</div>
+                </div>
+                <div class="sales-card growth">
+                    <div class="card-header">
+                        <h3>Growth</h3>
+                        <span class="trend up"><i class="fas fa-arrow-up"></i> 25.5%</span>
+                    </div>
+                    <div class="card-value">$255K</div>
+                    <div class="card-change">Monthly projection</div>
+                </div>
+            </div>
+
+            <!-- Graph Report -->
+            <div class="graph-section">
+                <div class="section-header">
+                    <h3>Graph Report</h3>
+                    <div class="period-selector">
+                        <button class="period-btn active">7D</button>
+                        <button class="period-btn">30D</button>
+                        <button class="period-btn">90D</button>
+                    </div>
+                </div>
+                <canvas id="salesChart" width="400" height="200"></canvas>
+            </div>
+
+            <!-- Total Sales Overview -->
+            <div class="overview-section">
+                <div class="section-header">
+                    <h3>Total Sales Overview</h3>
+                </div>
+                <canvas id="doughnutChart" width="200" height="200"></canvas>
+            </div>
+
+            <!-- Recent Sales List -->
+            <div class="recent-sales">
+                <div class="section-header">
+                    <h3>Recent Sales</h3>
+                    <a href="./error.html" class="view-all">View All →</a>
+                </div>
+                <div class="sales-list">
+                    <div class="sale-item">
+                        <div class="sale-info">
+                            <span class="sale-product">Paracetamol 500mg</span>
+                            <span class="sale-customer">John Doe</span>
+                        </div>
+                        <div class="sale-amount">₹250</div>
+                    </div>
+                    <div class="sale-item">
+                        <div class="sale-info">
+                            <span class="sale-product">Aspirin 75mg</span>
+                            <span class="sale-customer">Jane Smith</span>
+                        </div>
+                        <div class="sale-amount">₹180</div>
+                    </div>
+                    <div class="sale-item">
+                        <div class="sale-info">
+                            <span class="sale-product">Vitamin D3</span>
+                            <span class="sale-customer">Rahul K.</span>
+                        </div>
+                        <div class="sale-amount">₹450</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-column company-info">
+                <div class="company-logo">
+                    <h3>Stackly</h3>
+                </div>
+                <p class="company-desc">
+                    Premium online pharmacy delivering FDA-approved medications with 
+                    temperature-controlled logistics. Serving 500K+ customers with 99.9% 
+                    authenticity guarantee and 24/7 pharmacist support.
+                </p>
+                <div class="company-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@medicare.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-column quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href=".error.html">About</a></li>
+                    <li><a href="./error.html">Service</a></li>
+                    <li><a href="./error.html">Blog</a></li>
+                    <li><a href="./error.html">contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Address -->
+            <div class="footer-column address-section">
+                <h4>Our Locations</h4>
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Headquarters</h5>
+                        <p>123 Medical Street<br>Healthcare City, Salem - 12345</p>
+                    </div>
+                </div>
+                <div class="address-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Warehouse</h5>
+                        <p>456 Pharma Park<br>Industrial Zone, Salem 67890</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="footer-column map-preview">
+                <h4>Location Map</h4>
+                <div class="map-container">
+                    <iframe
+                class="map1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+        </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="./error.html" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="./error.html" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                <a href="./error.html" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="./error.html" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="./error.html" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            
+            <div class="footer-rights">
+                <p>&copy; 2026 MediCare Pharmacy. All rights reserved. | 
+                   <a href="./error.html">Privacy Policy</a> | 
+                   <a href="./error.html">Terms of Service</a> 
+                
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Charts
+    const salesCtx = document.getElementById('salesChart').getContext('2d');
+    new Chart(salesCtx, {
+        type: 'line',
+        data: {
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            datasets: [{
+                label: 'Sales',
+                data: [12000, 19000, 15000, 25000, 22000, 29000],
+                borderColor: '#10b981',
+                backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                tension: 0.4,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: { display: false },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+
+    const doughnutCtx = document.getElementById('doughnutChart').getContext('2d');
+    new Chart(doughnutCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Pharmacy', 'Online', 'Walk-in'],
+            datasets: [{
+                data: [65, 25, 10],
+                backgroundColor: ['#10b981', '#3b82f6', '#f59e0b']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } }
+        }
+    });
+
+    // Period selector
+    document.querySelectorAll('.period-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelector('.period-btn.active').classList.remove('active');
+            this.classList.add('active');
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+        hamburger.classList.toggle('active');
+    });
+
+    dropdowns.forEach(dropdown => {
+        const dropdownLink = dropdown.querySelector('.nav-link');
+        dropdownLink.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('active')) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-menu') && !e.target.closest('.hamburger')) {
+            navMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            hamburger.classList.remove('active');
+            dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+        }
+    });
+
+    document.querySelectorAll('.dropdown-content a, .nav-link:not(.dropdown .nav-link), .signin-btn').forEach(link => {
+        link.addEventListener('click', () => {
+            setTimeout(() => {
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                hamburger.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            }, 150);
+        });
+    });
+});
+</script>
+
+
+ <script>
+      AOS.init({
+        duration: 800,
+        once: false,
+        mirror: true,
+        offset: 100,
+      });
+    </script>
+    <script>
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.pointerEvents = "none";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+
+  }, 1000);
+});
+</script>
+</body>
+</html>
