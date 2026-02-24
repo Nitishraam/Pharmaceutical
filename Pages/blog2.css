@@ -1274,6 +1274,10 @@ body {
     .authors-header h2 {
         font-size: 2.2rem;
     }
+    .meet-experts-btn{
+        padding: 10px;
+    }
+   
 }
 
 
@@ -1549,7 +1553,7 @@ body {
 
 @media (max-width: 768px) {
     .contact-container {
-        padding: 0 1.5rem;
+        padding: 0 0rem;
     }
     
     .form-row {

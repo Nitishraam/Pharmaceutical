@@ -2085,7 +2085,13 @@ body {
     
     .mockup-screen {
         height: 380px;
+        width: 70%;
     }
+  .dashboard-stats
+  {
+    flex-direction: column;
+  }
+ 
 }
 
 @media (max-width: 768px) {
@@ -2098,7 +2104,7 @@ body {
     }
     
     .mockup-screen {
-        height: 340px;
+        height: 500px;
         padding: 1.5rem;
     }
     
