@@ -531,8 +531,9 @@ body {
 @media (max-width: 1024px) {
     .header-main {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 5px;
         text-align: center;
+        margin-top: 20px;
     }
     
     .header-right {
@@ -547,7 +548,7 @@ body {
 
 @media (max-width: 768px) {
     .services-header {
-        padding: 90px 0 60px;
+        padding: 90px 0 10px;
     }
     
     .header-left h1 {
@@ -561,14 +562,14 @@ body {
     }
     
     .services-preview {
-        flex-direction: row;
+        flex-direction: column;
         overflow-x: auto;
         padding: 20px;
-        gap: 15px;
+        gap: 30px;
     }
     
     .preview-card {
-        flex: 0 0 160px;
+        /* flex: 0 0 160px; */
         padding: 20px 15px;
         min-width: 160px;
     }
@@ -753,7 +754,7 @@ body {
 
 @media (max-width: 768px) {
     .services-grid-section {
-        padding: 100px 0;
+        padding: 30px 0;
     }
     
     .section-header h2 {
@@ -1005,7 +1006,7 @@ body {
 
 @media (max-width: 768px) {
     .trust-numbers-section {
-        padding: 100px 0;
+        padding: 30px 0;
     }
     
     .tn-content-side h2 {
@@ -1139,14 +1140,14 @@ body {
 .spec-table {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2px;
 }
 
 .spec-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #f1f5f9;
 }
 
@@ -1222,7 +1223,7 @@ body {
     }
     
     .spec-group {
-        flex-direction: row;
+        /* flex-direction: row; */
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -1230,7 +1231,7 @@ body {
 
 @media (max-width: 768px) {
     .service-specs-section {
-        padding: 100px 0;
+        padding: 30px 0;
     }
     
     .specs-header h2 {
@@ -1473,7 +1474,7 @@ body {
 
 @media (max-width: 768px) {
     .premium-cta-section {
-        padding: 100px 0;
+        padding: 30px 0;
     }
     
     .cta-main h2 {
@@ -1517,14 +1518,14 @@ body {
 
 .pricing-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .pricing-header h2 {
     font-size: 3rem;
     font-weight: 800;
     color: #1e293b;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .pricing-header h2 span {
@@ -1668,7 +1669,7 @@ body {
 }
 
 .price-number {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
     color: #1e293b;
     line-height: 1;
@@ -1698,7 +1699,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 15px 0;
+    padding: 5px 0;
     font-weight: 600;
     color: #475569;
 }
@@ -1754,7 +1755,7 @@ body {
 
 @media (max-width: 768px) {
     .pricing-section {
-        padding: 100px 0;
+        padding: 30px 0;
     }
     
     .pricing-header h2 {
@@ -1782,7 +1783,7 @@ body {
     }
     
     .price-number {
-        font-size: 3.2rem;
+        font-size: 2rem;
     }
 }
 
@@ -1958,7 +1959,7 @@ body {
 
 @media (max-width: 768px) {
     .faq-section {
-        padding: 100px 0;
+        padding: 30px 0;
     }
     
     .faq-header h2 {
